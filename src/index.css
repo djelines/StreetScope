@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import 'leaflet/dist/leaflet.css';
+
+
+.user-marker {
+  animation: blink 3s infinite;
+}
+@keyframes blink {
+  0%, 100% { filter: hue-rotate(150deg) drop-shadow(0 0 5px rgb(82, 0, 0)); }
+  50% { filter: hue-rotate(140deg) drop-shadow(0 0 15px rgb(230, 138, 138)); }
+}
+      
